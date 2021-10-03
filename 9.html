@@ -1,0 +1,112 @@
+﻿<html>
+ <title>cyber book sores</title>
+  <body bgcolor="lightblue">
+   <marquee behavior="scroll"><h2><i>Welcome to&nbsp </i>RVRJCCE <i>Cyber Book Stores</i></h2></marquee>
+   <table cellpadding="5" cellspacing="20">
+  <tr>
+    <td>Author:Herbert Schildt<br>title:JAVA<br>
+    <a href="https://gfgc.kar.nic.in/sirmv-science/GenericDocHandler/138-a2973dc6-c024-4d81-be6d-5c3344f232ce.pdf"><img src="java.jpg" width="100" height="100"></img></a>
+    cost:200/-</td>
+    
+    <td>Author:Jeffrey C. Jackson<br>title:Web Technologies<br>
+    <a href="https://www.seu1.org/files/level6/IT230/Book/(web.tech%201st%20book)%20Web%20Technologies%20-%20A%20Computer%20Science%20Perspective.pdf"><img src="WT.jpg" width="100" height="100"></img></a>
+    cost:250/-</td>
+ 
+    <td>Author:Dr. Subasish Mohapatra<br>title:OOPs in C++<br>
+    <a href="https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf"><img src="OOP.jpg" width="100" height="100"></img></a>
+    cost:300/-</td>
+
+    <td>Author:Guido van Rossum<br> title:Python<br>
+    <a href="https://bugs.python.org/file47781/Tutorial_EDIT.pdf"><img src="Python.jpg" width="100" height="100"></img></a>
+    cost:350/-</td>
+
+    <td>Author: Ivan Marsic<br> title:Software Engineering<br> 
+    <a href="https://www.ece.rutgers.edu/~marsic/books/SE/"><img src="SE.jpg" width="100" height="100"></img></a>
+    cost:350/-</td>
+
+    <td>Author:Michael J. Evans<br> title:P&S<br>
+    <a href="http://www.utstat.toronto.edu/mikevans/jeffrosenthal/book.pdf"><img src="PS.jpg" width="100" height="100"></img></a>
+    cost:300/-</td>
+ 
+    <td>
+     <form name="f1">
+     select a book <select name="books">
+     <option value="JAVA">JAVA</option>
+     <option value="Web Technoligies">Web Technoligies</option>
+     <option value="OOPs in C++">OOPs in C++</option>
+     <option value="Python">Python</option>
+     <option value="Software Engineering">Software Engineering</option>
+     <option value="P&S">P&S</option></select>
+     <br><br>
+     <input type="button" value="display" onclick="display()">
+    </td>
+  </tr>
+     </form>
+      </table>
+       <script language="javascript">
+        var i,j;
+        function display()
+        {
+         j=document.f1.books.length;
+         for(i=0;i<j;i++)
+         {
+          if(document.f1.books[i].selected)
+          {
+           if(document.f1.books[i].value=='JAVA')
+            window.open("https://gfgc.kar.nic.in/sirmv-science/GenericDocHandler/138-a2973dc6-c024-4d81-be6d-5c3344f232ce.pdf");
+           
+           else if(document.f1.books[i].value=='Web Technoligies')
+            window.open("https://www.seu1.org/files/level6/IT230/Book/(web.tech%201st%20book)%20Web%20Technologies%20-%20A%20Computer%20Science%20Perspective.pdf");
+           
+           else if(document.f1.books[i].value=='OOPs in C++')
+            window.open("https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf");
+
+           else if(document.f1.books[i].value=='Python')
+            window.open("https://bugs.python.org/file47781/Tutorial_EDIT.pdf");
+           
+           else if(document.f1.books[i].value=='Software Engineering')
+            window.open("https://www.ece.rutgers.edu/~marsic/books/SE/");
+
+           else if(document.f1.books[i].value=='P&S')
+            window.open("http://www.utstat.toronto.edu/mikevans/jeffrosenthal/book.pdf");
+           
+           else 
+            document.write("not valid");
+           }
+          }
+         }
+       </script>
+
+        <table><tr><td>
+        <img src="java.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes the Java</td></tr></table>
+
+
+        <table><tr><td>
+        <img src="WT.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes the Web Technologies</td></tr></table>
+
+        <table><tr><td>
+        <img src="OOP.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes Object Oriented program in C++</td></tr></table>
+
+
+        <table><tr><td>
+        <img src="Python.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes Python </td></tr></table>
+
+        <table><tr><td>
+        <img src="SE.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes Software Engineering</td></tr></table>
+
+        <table><tr><td>
+        <img src="PS.jpg" width="100" height="100"></img>
+        </td>
+        <td>This subject describes Probability & Statistics</td></tr></table>
+
+</html>
